@@ -50,6 +50,19 @@ var felix = new Cat('felix', 'cartoon', 4, 'me-OW', 'tuxedo')
 //console.log(felix)
 //felix.yell()
 
+
+var animal = { eats: true }
+
+function Rabbit(name) {
+  this.name = name
+}
+
+Rabbit.prototype = animal
+//A new function call sets the object to the value of its prototype property.
+var rabbit = new Rabbit('John')
+
+console.log( rabbit.eats ); //true
+console.log( rabbit.name ); //John
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 // OOP with es6(ECMAscript6) syntax.
 
